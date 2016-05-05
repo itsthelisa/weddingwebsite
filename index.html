@@ -69,7 +69,10 @@
                         <a class="page-scroll" href="#whereToStay">Where To Stay</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#theDayAfter">The Day After</a>
+                        <a class="page-scroll" href="#theWeekend">The Weekend</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#giftRegistry">Gift Registry</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#rsvp">RSVP</a>
@@ -115,7 +118,7 @@
             <div class="row text-center">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="box-background">
-                        <h4 class="service-heading">When &amp; Where</h4>
+                        <h2 class="section-heading">When &amp; Where</h2>
                         <p class="text-muted">We'd love for your to join us to celebrate our day!</p>
                         <ul class="list-unstyled when-where-list">
                             <li>
@@ -132,33 +135,20 @@
                             </li>
                         </ul>     
                     </div>
+                    <a class="btn btn-primary btn-xl" href="#" data-toggle="modal" data-target="#rsvp-modal">RSVP Now</a>
                 </div>
-                <!-- <div class="col-md-6 image-collage">
-                    <div class="collage-col">
-                        <img class="mudbrick-image" src="/img/Mudbrick.jpg"
-                        ><img class="mudbrick-image" src="/img/Mudbrick.jpg">                            
-                    </div>
-                    <div class="collage-col">
-                        <img class="mudbrick-image" src="/img/Mudbrick.jpg"                            
-                        ><img class="mudbrick-image" src="/img/Mudbrick.jpg">                            
-                    </div>
-                </div> -->
+
             </div>
         </div>
     </section>
 
-<!-- Location Section -->
-    <section id="location">
+    <!-- Location Section -->
+    <section id="location" class="no-padding">
         <div id="map" class="map-container"></div>
-        <!-- <div id="mapContainer" class="container">
-            <iframe id="mapFrame" width="100%" height="450" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJZYYC_LjLcm0R_RxEHIMZU44&key=AIzaSyAx4WAnfV4YuhIwPhGCGNwxOsWjAzLkSBU&zoom=14&center=-36.783602,175.010856" allowfullscreen>
-
-            </iframe>
-        </div> -->
     </section>
 
     <!-- Getting There Grid Section -->
-    <section id="gettingThere" class="bg-light-gray">
+    <section id="gettingThere">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -167,65 +157,46 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Ferry</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">There are a number of ferry options including:</p>
-                                    <ul class="list-unstyled">
-                                        <li><a href="http://www.sealink.co.nz/waiheke/timetables">Sealink</a></li>
-                                        <li><a href="https://www.fullers.co.nz/GetTimetable?from=WAIH&to=AUCK">Fullers</a></li>
-                                        <li><a href="http://www.explorewaiheke.co.nz/timetable/">Explore</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Car</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Bus</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">We will be hiring a bus that will go between The ferry terminal, Oneroa and Mudbrick</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="col-sm-4">
+                    <div class="box-background">
+                        <h3 class="section-heading">
+                            Ferry
+                        </h3>
+                        <p class="text-muted">There are a number of ferry options including:</p>
+                        <ul>
+                            <li><a href="http://www.sealink.co.nz/waiheke/timetables">Sealink</a></li>
+                            <li><a href="https://www.fullers.co.nz/GetTimetable?from=WAIH&to=AUCK">Fullers</a></li>
+                            <li><a href="http://www.explorewaiheke.co.nz/timetable/">Explore</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="box-background">
+                        <h3 class="section-heading">
+                            Car
+                        </h3>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="box-background">
+                        <h3 class="section-heading">
+                            Bus
+                        </h3>
+                        <p class="text-muted">We will be hiring a bus that will go between The ferry terminal, Oneroa and Mudbrick</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Section
     <section id="about">
         
     </section>
 
     <!-- Team Section -->
-    <section id="team" class="bg-light-gray">
+    <section id="whereToStay" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -289,7 +260,7 @@
     </section>
 
     <!-- Clients Aside -->
-    <aside class="clients">
+    <section id="theWeekend">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
@@ -314,10 +285,37 @@
                 </div>
             </div>
         </div>
-    </aside>
+    </section>
+
+    <section id="giftRegistry">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
     
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="rsvp">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">

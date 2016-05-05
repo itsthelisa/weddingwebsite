@@ -126,7 +126,7 @@ fieldset[disabled] .btn-primary.active {
   color: #ffffff;
   background-color: #e5b7c3;
   border-color: #e5b7c3;
-  font-family: "Luella", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Songbird", "Helvetica Neue", Helvetica, Arial, cursive;
   font-weight: 700;
   border-radius: 3px;
   font-size: 18px;
@@ -322,6 +322,9 @@ section h3.section-subheading {
   font-style: italic;
   font-weight: 400;
   margin-bottom: 75px;
+}
+section.no-padding {
+  padding: 0;
 }
 .service-heading {
   margin: 15px 0;
@@ -843,4 +846,11 @@ body {
 }
 .map-text {
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#gettingThere {
+  background: #e5b7c3 url('../img/header-bg.jpg') no-repeat 50% top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

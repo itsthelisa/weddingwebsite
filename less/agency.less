@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-xl {
 	.button-variant(white; @brand-primary; @brand-primary);
-	.heading-font;
+	.subheading-font;
 	font-weight: 700;
 	border-radius: 3px;
 	font-size: 18px;
@@ -281,6 +281,9 @@ section {
 		font-style: italic;
 		font-weight: 400;
 		margin-bottom: 75px;
+    }
+    &.no-padding {
+    	padding: 0;
     }
 }
 
@@ -879,5 +882,13 @@ body {
 
 .map-text {
 	.body-font;
+}
+
+#gettingThere {
+	background: @brand-primary url('../img/header-bg.jpg') no-repeat 50% top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
