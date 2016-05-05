@@ -1,11 +1,6 @@
-/*!
- * Agency v1.0.x (http://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
-
-// jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
+    
+    // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
@@ -14,8 +9,27 @@ $(function() {
         event.preventDefault();
     });
 
+    /* ======= Google Map ======= */
+    map = new GMaps({
+        div: '#map',
+        lat: -36.785908,
+        lng: 175.013876,
+        scrollwheel: false,
+        zoom: 14,
+    });
 
-    // you want to enable the pointer events only on click;
+    map.addMarker({
+        lat: -36.792404,
+        lng: 175.000154,    
+        infoWindow: {
+            content: '<h5 class="map-text">Mudbrick Restaurant &amp; Vinyard</h5>' +
+                '<div class="map-text"><span class="region">126 Church Bay Rd</span><br>' +
+                '<span class="postal-code">Waiheke Island</span></div>'
+        } 
+        
+    });
+
+    google.maps.event.trigger(map.markers[0], 'click');
 });
 
 // Highlight the top nav as scrolling occurs
@@ -27,20 +41,6 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
     $('.navbar-toggle:visible').click();
 });
-
-$('#mapFrame').addClass('scrolloff'); // set the pointer events to none on doc ready
-$('#mapContainer').on('click', function () {
-	console.log('pooson');
-    $('#mapFrame').removeClass('scrolloff'); // set the pointer events true on click
-});
-
-// you want to disable pointer events when the mouse leave the canvas area;
-
-$("#mapFrame").mouseleave(function () {
-	console.log('funnor');
-    $('#mapFrame').addClass('scrolloff'); // set the pointer events to none when mouse leaves the map area
-});
-
 
 /* ======= Countdown ========= */
 // set the date we're counting down to
