@@ -890,5 +890,63 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    .getting-there-heading {
+    	margin-bottom: 40px;
+    }
+}
+
+#giftRegistry {
+	.stencil {
+		background: @brand-primary url('../img/stencil.png') no-repeat 50% top;
+		-webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+
+	    // Try max height with margin: auto; to get responsive
+	    min-height: 600px;
+	    margin-left: 110px;
+	    margin-right: 110px;
+	    position: relative;
+	}
+
+	.gift-info {
+		max-width: 400px;
+	    position: absolute;
+	    top: 120px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    left: 0;
+	    right: 0;
+	}
+	.cursive-heading {
+		.cursive-font;
+		font-weight: normal;
+		font-size: 50px;
+		line-height: 40px;
+		margin-top: 30px;
+		margin-bottom: 20px;
+		padding-bottom: 10px;
+		color: @brand-primary;
+	}
+	.thank-you-text {
+		.heading-font;
+		font-size: 40px;
+	}
+
+	.us-image {
+		max-width: 275px;
+	    height: 275px;
+	    border-radius: 150px;
+	    border: solid 8px #e5b7c3;
+	    position: absolute;
+	    bottom: -30px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    left: 0;
+	    right: 0;
+	}
+
 }
 

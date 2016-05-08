@@ -854,3 +854,52 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+#gettingThere .getting-there-heading {
+  margin-bottom: 40px;
+}
+#giftRegistry .stencil {
+  background: #e5b7c3 url('../img/stencil.png') no-repeat 50% top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 600px;
+  margin-left: 110px;
+  margin-right: 110px;
+  position: relative;
+}
+#giftRegistry .gift-info {
+  max-width: 400px;
+  position: absolute;
+  top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+#giftRegistry .cursive-heading {
+  font-family: "Satisfy", "Helvetica Neue", Helvetica, Arial, cursive;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 40px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  color: #e5b7c3;
+}
+#giftRegistry .thank-you-text {
+  font-family: "Luella", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 40px;
+}
+#giftRegistry .us-image {
+  max-width: 275px;
+  height: 275px;
+  border-radius: 150px;
+  border: solid 8px #e5b7c3;
+  position: absolute;
+  bottom: -30px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
