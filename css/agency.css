@@ -307,7 +307,7 @@ header .curve-holder {
   }
 }
 section {
-  padding: 100px 0;
+  padding: 100px 0 0 0;
 }
 section h2.section-heading {
   font-size: 60px;
@@ -325,6 +325,9 @@ section h3.section-subheading {
 }
 section.no-padding {
   padding: 0;
+}
+section.padding-bottom {
+  padding-bottom: 100px;
 }
 .service-heading {
   margin: 15px 0;
@@ -848,7 +851,7 @@ body {
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #gettingThere {
-  background: #e5b7c3 url('../img/header-bg.jpg') no-repeat 50% top;
+  background: url('../img/header-bg.jpg') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -858,24 +861,45 @@ body {
   margin-bottom: 40px;
 }
 #giftRegistry .stencil {
-  background: #e5b7c3 url('../img/stencil.png') no-repeat 50% top;
+  background: url('../img/stencil.png') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   min-height: 600px;
-  margin-left: 110px;
-  margin-right: 110px;
   position: relative;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  #giftRegistry .stencil {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
+}
+@media (min-width: 992px) {
+  #giftRegistry .stencil {
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  #giftRegistry .stencil {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
 }
 #giftRegistry .gift-info {
   max-width: 400px;
   position: absolute;
-  top: 120px;
+  top: 145px;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
+}
+@media (min-width: 768px) {
+  #giftRegistry .gift-info {
+    top: 120px;
+  }
 }
 #giftRegistry .cursive-heading {
   font-family: "Satisfy", "Helvetica Neue", Helvetica, Arial, cursive;
@@ -892,6 +916,7 @@ body {
   font-size: 40px;
 }
 #giftRegistry .us-image {
+  display: none;
   max-width: 275px;
   height: 275px;
   border-radius: 150px;
@@ -902,4 +927,9 @@ body {
   margin-right: auto;
   left: 0;
   right: 0;
+}
+@media (min-width: 768px) {
+  #giftRegistry .us-image {
+    display: block;
+  }
 }

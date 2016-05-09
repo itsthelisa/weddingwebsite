@@ -267,7 +267,9 @@ header {
 // Global Section Styles
 
 section {
-    padding: 100px 0;
+    padding: 100px 0 0 0;
+
+
     h2.section-heading {
 		font-size: 60px;
 		margin-top: 0;
@@ -284,6 +286,9 @@ section {
     }
     &.no-padding {
     	padding: 0;
+    }
+    &.padding-bottom {
+    	padding-bottom: 100px;
     }
 }
 
@@ -885,7 +890,7 @@ body {
 }
 
 #gettingThere {
-	background: @brand-primary url('../img/header-bg.jpg') no-repeat 50% top;
+	background: url('../img/header-bg.jpg') no-repeat 50% top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -898,7 +903,7 @@ body {
 
 #giftRegistry {
 	.stencil {
-		background: @brand-primary url('../img/stencil.png') no-repeat 50% top;
+		background: url('../img/stencil.png') no-repeat 50% top;
 		-webkit-background-size: cover;
 	    -moz-background-size: cover;
 	    -o-background-size: cover;
@@ -906,19 +911,40 @@ body {
 
 	    // Try max height with margin: auto; to get responsive
 	    min-height: 600px;
-	    margin-left: 110px;
-	    margin-right: 110px;
 	    position: relative;
+
+
+	    // Works for sizes greater than 432px
+	    margin: 0;
+	    
+	    @media(min-width:768px) {
+	    	margin-left: 110px;
+	    	margin-right: 110px;
+	    }
+
+	    @media(min-width:992px) {
+	    	margin: 0;
+	    }
+
+	    @media(min-width:1200px) {
+		    margin-left: 110px;
+		    margin-right: 110px;
+	    }
 	}
 
 	.gift-info {
+
 		max-width: 400px;
 	    position: absolute;
-	    top: 120px;
+	    top: 145px;
 	    margin-left: auto;
 	    margin-right: auto;
 	    left: 0;
 	    right: 0;
+
+	    @media(min-width:768px) {
+	    	top: 120px;
+	    }
 	}
 	.cursive-heading {
 		.cursive-font;
@@ -936,6 +962,7 @@ body {
 	}
 
 	.us-image {
+		display: none;
 		max-width: 275px;
 	    height: 275px;
 	    border-radius: 150px;
@@ -946,6 +973,10 @@ body {
 	    margin-right: auto;
 	    left: 0;
 	    right: 0;
+
+	    @media(min-width:768px) {
+	    	display: block;
+	    }
 	}
 
 }
