@@ -3,14 +3,34 @@
 [MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x).
 [Robomongo](https://robomongo.org/download) is useful.
 
-# Server
+## Database setup
 
-1. Run npm install to gather depedencies.
-1. Create a `data` directory to store your data
-1. Start a mongo process with `mongod --dbpath=./data`
-1. Run `gulp` to start your server (watching for changes)
+1. Create a `data` directory to store your data (you only need to do this once).
+1. Start a mongo process with `mongod --dbpath=./data` (we'll need to manage this in the server in the long run)
 
-To simulate a POST: curl -X POST -H "Content-Type: application/json" -d '{"hello": "world"}' http://localhost:3000/api/people
+## Setup
+
+To fetch packages first:
+
+``` npm install ``` (dev dependencies)
+``` bower install ``` (client side dependencies)
+
+To build:
+
+``` gulp build ```
+
+To clean built files:
+
+``` gulp clean ```
+
+This will empty the public folder, with the exception of bower_components.
+
+## Serving
+
+``` gulp ``` or
+``` gulp watch ```
+
+This will build, serve and watch your files for changes.
 
 # TODOs
 
