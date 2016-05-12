@@ -1,0 +1,40 @@
+{
+  "name": "agency",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Start Bootstrap"
+  ],
+  "private": true,
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
+  },
+  "homepage": "https://github.com/itsthelisa/weddingwebsite",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.6.2",
+    "jQuery": "1.12.3",
+    "bootstrap": "^3.3.6"
+  },
+  "overrides": {
+    "font-awesome": {
+      "main": [
+        "less/font-awesome.less",
+        "fonts/**/*"
+      ]
+    },
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    }
+  }
+}
