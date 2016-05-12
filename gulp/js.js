@@ -2,10 +2,8 @@
 
 var gulp = require('gulp'),
     lazypipe = require('lazypipe'),
-    mainBowerFiles = require('main-bower-files'),
     path = require('path'),
     plugins = require('gulp-load-plugins')(),
-    series = require('stream-series'),
 
     srcRoot = 'src',
     destRoot = 'public';
@@ -23,17 +21,11 @@ function buildFiles(name) {
 
 gulp.task('libjs', function() {
 
-    var bower = gulp.src(mainBowerFiles())
-        .pipe(plugins.filter(['**/*.js']));
-
-    var custom = gulp.src(path.join(srcRoot, 'lib/**/*.js'))
+    return gulp.src(path.join(srcRoot, 'lib/**/*.js'))
         .pipe(plugins.order([
             // classie must come first
             path.join(srcRoot, 'lib/classie.js'),
-        ], { base: '.' }));
-
-    // Bower modules must come first
-    return series(bower, custom)
+        ], { base: '.' }))
         .pipe(buildFiles('lib')());
 });
 

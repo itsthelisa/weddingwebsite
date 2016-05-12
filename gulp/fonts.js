@@ -1,20 +1,12 @@
 'use strict';
 
 var gulp = require('gulp'),
-    mainBowerFiles = require('main-bower-files'),
-    plugins = require('gulp-load-plugins')(),
-    series = require('stream-series'),
+    changed = require('gulp-changed'),
 
 	dest = 'public/fonts';
 
 gulp.task('fonts', function() {
-
-	var fontawesome = gulp.src(mainBowerFiles())
-    	.pipe(plugins.filter(['**/*.eot', '**/*.svg', '**/*.ttf', '**/*.woff', '**/*.woff2', '**/*.otf']));
-
-    var fonts =  gulp.src('src/fonts/**/*');
-
-    return series(fontawesome, fonts)
-    	.pipe(plugins.changed(dest))
+    return gulp.src('src/fonts/**/*')
+    	.pipe(changed(dest))
         .pipe(gulp.dest(dest));
 });

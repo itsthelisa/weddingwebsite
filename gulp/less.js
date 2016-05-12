@@ -2,9 +2,7 @@
 
 var gulp = require('gulp'),
     lazypipe = require('lazypipe'),
-    mainBowerFiles = require('main-bower-files'),
     path = require('path'),
-    series = require('stream-series'),
     plugins = require('gulp-load-plugins')(),
 
     srcRoot = 'src',
@@ -31,18 +29,10 @@ function buildFiles(name) {
 }
 
 gulp.task('libless', function() {
-    var bower = getLibStream(mainBowerFiles());
-
-    var custom = getLibStream([
+    return getLibStream([
             path.join(srcRoot, 'lib/**/*.less'),
             path.join(srcRoot, 'lib/**/*.css')
-        ]);
-
-    // Bower modules must come first
-    var lib = series(bower, custom)
-        .pipe(buildFiles('lib')());
-
-    return lib;
+        ]).pipe(buildFiles('lib')());
 });
 
 gulp.task('appless', function() {

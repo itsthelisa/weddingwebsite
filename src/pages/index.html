@@ -11,8 +11,12 @@
 
     <title>Lisa &amp; Michael 2016</title>
 
+    <!-- Polyfill -->
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+
     <!-- Lib CSS -->
-    <link href="css/lib.min.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- Custom CSS -->
     <link href="css/app.min.css" rel="stylesheet">
@@ -22,6 +26,17 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
+
+    <style is="custom-style">
+      paper-radio-button.pink {
+        --paper-radio-button-checked-color: #E5B7C3;
+        --paper-radio-button-checked-ink-color: #E5B7C3;
+        --paper-radio-button-unchecked-color: #E5B7C3;
+        --paper-radio-button-unchecked-ink-color: #E5B7C3;
+      }
+    </style>
+
+    <link rel="import" href="bower_components/paper-radio-group/paper-radio-group.html">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -285,10 +300,10 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="bus">Would you use a bus to and from Mudbrick if provided?</label>
-                                    <input type="radio" class="form-control" value="Yes" name="bus" data-validation-minchecked-minchecked="1"
-                                    data-validation-minchecked-message="Choose one">Yes
-
-                                    <input type="radio" class="form-control" value="No" name="bus">No
+                                    <paper-radio-group selected="yes">
+                                        <paper-radio-button class="pink" name="yes">Yes</paper-radio-button>
+                                        <paper-radio-button class="pink" name="no">No</paper-radio-button>
+                                    </paper-radio-group>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -325,7 +340,11 @@
     <!-- Google Maps -->
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true&.js"></script>
 
-    <!-- Lib files (Bootstrap, JQuery etc) -->
+    <!-- Library files -->
+    <script type="text/javascript" src="bower_components/jQuery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Extensions -->
     <script src="js/lib.min.js"></script>
 
     <!-- Plugin JavaScript -->

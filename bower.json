@@ -21,20 +21,9 @@
   "dependencies": {
     "font-awesome": "^4.6.2",
     "jQuery": "1.12.3",
-    "bootstrap": "^3.3.6"
-  },
-  "overrides": {
-    "font-awesome": {
-      "main": [
-        "less/font-awesome.less",
-        "fonts/**/*"
-      ]
-    },
-    "bootstrap": {
-      "main": [
-        "dist/css/bootstrap.css",
-        "dist/js/bootstrap.js"
-      ]
-    }
+    "bootstrap": "^3.3.6",
+    "polymer": "^1.4.0",
+    "paper-radio-group": "^1.1.0",
+    "paper-radio-button": "^1.1.2"
   }
 }
