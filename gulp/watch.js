@@ -25,7 +25,7 @@ function serve() {
 
 gulp.task('watch', ['build'], function() {
 
-    gulp.watch(['src/lib/**'], ['libjs', 'libless',]);
+    gulp.watch(['src/lib/**'], ['libjs', 'libless']);
     gulp.watch(['src/fonts/**'], ['fonts']);
 
     gulp.watch(['src/less/*.less'], ['appless']);

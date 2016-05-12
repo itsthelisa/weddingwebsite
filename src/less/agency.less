@@ -798,6 +798,11 @@ body {
 	padding: 30px;
 }
 
+.box-background-light {
+	&:extend(.box-background);	
+	background: rgba(247, 247, 247, 0.6);
+}
+
 .when-where-list {
 	font-size: 16px;
 	padding-left: 70px;
@@ -822,6 +827,11 @@ body {
 	color: @brand-primary;
 	padding-left: 20px;
 	padding-right: 20px;
+}
+
+.decoration-white {
+	&:extend(.decoration);
+	color: white;
 }
 
 .mirror-image{
@@ -889,15 +899,28 @@ body {
 	.body-font;
 }
 
+.image-heading {
+	color: white;
+	margin-bottom: 40px;
+}
+
 #gettingThere {
 	background: url('../img/header-bg.jpg') no-repeat 50% top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
 
-    .getting-there-heading {
-    	margin-bottom: 40px;
+#theWeekend {
+	background: url('../img/header-bg.jpg') no-repeat 50% top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    .solid-text {
+    	opacity: 1;
     }
 }
 
