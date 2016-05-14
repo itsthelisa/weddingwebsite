@@ -112,6 +112,7 @@ $(function() {
             var data = {
                 names: $('#names').val(),
                 bus: $('.bus[checked]').attr('name'),
+                attending: $('.attending[checked]').attr('name'),
                 email: $('#email').val(),
                 extraInfo: $('#extraInfo').val()
             };

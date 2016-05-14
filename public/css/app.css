@@ -120,7 +120,7 @@ fieldset[disabled] .btn-primary.active {
   color: white;
   background-color: #E5B7C3;
   border-color: #E5B7C3;
-  font-family: "Songbird", "Helvetica Neue", Helvetica, Arial, cursive;
+  font-family: "Voltaire", "Helvetica Neue", Helvetica, Arial, cursive;
   font-weight: 700;
   border-radius: 3px;
   font-size: 18px;
@@ -313,9 +313,8 @@ section h3.section-subheading {
   font-size: 16px;
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: none;
-  font-style: italic;
   font-weight: 400;
-  margin-bottom: 75px;
+  margin-bottom: 40px;
 }
 section.no-padding {
   padding: 0;
@@ -577,57 +576,6 @@ section.padding-bottom {
 }
 aside.clients img {
   margin: 50px auto;
-}
-section#contact {
-  background-color: #222;
-  background-image: url('../img/map-image.png');
-  background-position: center;
-  background-repeat: no-repeat;
-}
-section#contact .section-heading {
-  color: white;
-}
-section#contact .form-group {
-  margin-bottom: 25px;
-}
-section#contact .form-group input,
-section#contact .form-group textarea {
-  padding: 20px;
-}
-section#contact .form-group input.form-control {
-  height: auto;
-}
-section#contact .form-group textarea.form-control {
-  height: 236px;
-}
-section#contact .form-control:focus {
-  border-color: #E5B7C3;
-  box-shadow: none;
-}
-section#contact ::-webkit-input-placeholder {
-  font-family: "Luella", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  color: #bbbbbb;
-}
-section#contact :-moz-placeholder {
-  /* Firefox 18- */
-  font-family: "Luella", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  color: #bbbbbb;
-}
-section#contact ::-moz-placeholder {
-  /* Firefox 19+ */
-  font-family: "Luella", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  color: #bbbbbb;
-}
-section#contact :-ms-input-placeholder {
-  font-family: "Luella", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  color: #bbbbbb;
-}
-section#contact .text-danger {
-  color: #e74c3c;
 }
 footer {
   padding: 25px 0;
@@ -953,4 +901,19 @@ body {
   #giftRegistry .us-image {
     display: block;
   }
+}
+#contactForm #names {
+  height: 80px;
+}
+#contactForm .form-fields {
+  margin-bottom: 40px;
+}
+#contactForm .form-control:focus {
+  border-color: #E5B7C3;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(229, 183, 195, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(229, 183, 195, 0.6);
+}
+#contactForm label {
+  margin-top: 20px;
 }
