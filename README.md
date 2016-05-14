@@ -32,9 +32,12 @@ This will empty the public folder, with the exception of bower_components.
 
 This will build, serve and watch your files for changes.
 
+## Deployment
+
+``` git push heroku master ```
+
 # TODOs
 
 *Server*
 
 * Only open DB connection once on startup, and shut it down when the server exits
-* Validation for the json received from the client

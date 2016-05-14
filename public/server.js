@@ -1,7 +1,6 @@
 /*eslint strict: ["error", "global"]*/
 /* eslint-disable no-console */
 'use strict';
-
 var bodyParser = require('body-parser'),
     express = require('express'),
     expressValidator = require('express-validator'),
@@ -9,21 +8,14 @@ var bodyParser = require('body-parser'),
     util = require('util'),
 
     // Connection URL
-    url = 'mongodb://localhost:27017/wedding',
+    url = process.env.MONGODB_URI || 'mongodb://localhost:27017/wedding',
 
     // The app
     app = express();
 
-function insertPerson(db, person, callback) {
-    // ALL THE PEOPLE?!
-    var collection = db.collection('people');
+console.log(process.env.MONGODB_URI);
 
-    // Have one more!
-    collection.insertOne(person, function(err, result) {
-        // FIXME handle this error
-        callback(result);
-    });
-}
+var PEOPLE_COLLECTION = 'people';
 
 // Serve static files
 app.use(express.static(__dirname));
@@ -31,14 +23,36 @@ app.use(express.static(__dirname));
 app.use(bodyParser.json());
 app.use(expressValidator());
 
+// Create a database variable outside of the database connection callback to reuse the connection pool in your app.
+var db;
+
+// Connect to the database before starting the application server.
+MongoClient.connect(url, function (err, database) {
+    if (err) {
+        console.log(err);
+        process.exit(1);
+    }
+
+    // Save database object from the callback for reuse.
+    db = database;
+    console.log('Database connection ready');
+
+    // Initialize the app.
+    var server = app.listen(process.env.PORT || 3000, function () {
+        var port = server.address().port;
+        console.log('App now running on port', port);
+    });
+});
+
+// Generic error handler used by all endpoints.
+function handleError(res, reason, message, code) {
+    console.log('ERROR: ' + reason);
+    res.status(code || 500).json({'error': message});
+}
+
 // Serve index.html on root
 app.get('/', function(req, res) {
     res.redirect('./index.html');
-});
-
-// Serve app on port 3000
-app.listen(process.env.PORT || 3000, function() {
-    console.log('App listening on port 3000!');
 });
 
 app.post('/api/people', function(req, res) {
@@ -68,29 +82,29 @@ app.post('/api/people', function(req, res) {
         }
     });
 
+    var body = req.body;
+    
+    var person = {
+        names: body.names,
+        bus: body.bus,
+        email: body.email,
+        extraInfo: body.extraInfo || ''
+    };
+
     var errors = req.validationErrors();
+
     if (errors) {
         res.status(400).send(util.inspect(errors));
         return;
     }
 
-    // Connect to mongo
-    MongoClient.connect(url, function(err, db) {
-        var body = req.body;
+    person.createDate = new Date();
 
-        // Couldn't connect to DB
+    db.collection(PEOPLE_COLLECTION).insertOne(person, function(err, doc) {
         if (err) {
-            res.status(500).send({message: 'Can\'t connect to the DB :('});
+            handleError(res, err.message, 'Failed to create new person.');
         } else {
-            insertPerson(db, {
-                names: body.names,
-                bus: body.bus,
-                email: body.email,
-                extraInfo: body.extraInfo || ''
-            }, function() {
-                db.close();
-                res.status(200).send({});
-            });
+            res.status(201).json(doc.ops[0]);
         }
     });
 });
