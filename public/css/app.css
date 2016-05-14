@@ -856,6 +856,14 @@ body {
   color: white;
   margin-bottom: 40px;
 }
+.subheading {
+  font-family: "Luella", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 38px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+  text-align: center;
+}
 #gettingThere {
   background: url('../img/header-bg.jpg') no-repeat 50% top;
   -webkit-background-size: cover;
