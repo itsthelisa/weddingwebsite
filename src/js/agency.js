@@ -9,7 +9,7 @@ $(function() {
         event.preventDefault();
     });
 
-    /* ======= Google Map ======= */
+    /* ======= Google Map ======= 
     map = new GMaps({
         div: '#map',
         lat: -36.785908,
@@ -29,7 +29,7 @@ $(function() {
         
     });
 
-    google.maps.event.trigger(map.markers[0], 'click');
+    google.maps.event.trigger(map.markers[0], 'click');*/
 });
 
 // Highlight the top nav as scrolling occurs
