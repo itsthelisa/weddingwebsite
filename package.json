@@ -42,6 +42,6 @@
   },
   "scripts": {
     "start": "node ./public/server.js",
-    "postinstall": "bower install && gulp clean && gulp build"
+    "postinstall": "bower install"
   }
 }
