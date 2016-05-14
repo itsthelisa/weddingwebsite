@@ -68,6 +68,10 @@ app.post('/api/people', function(req, res) {
             notEmpty: true,
             errorMessage: 'Please provide the names of who is coming'
         },
+        attending: {
+            notEmpty: true,
+            errorMessage: 'Please let us know if you plan on attending'
+        },
         bus: {
             notEmpty: true,
             errorMessage: 'Please let us know if you\'d use a bus if one is provided'
@@ -87,6 +91,7 @@ app.post('/api/people', function(req, res) {
     var person = {
         names: body.names,
         bus: body.bus,
+        attending: body.attending,
         email: body.email,
         extraInfo: body.extraInfo || ''
     };
