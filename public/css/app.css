@@ -303,12 +303,6 @@ header .curve-holder {
 section {
   padding: 100px 0 0 0;
 }
-section h2.section-heading {
-  font-size: 60px;
-  margin-top: 0;
-  margin-bottom: 15px;
-  display: inline-block;
-}
 section h3.section-subheading {
   font-size: 16px;
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -321,6 +315,12 @@ section.no-padding {
 }
 section.padding-bottom {
   padding-bottom: 100px;
+}
+.section-heading {
+  font-size: 60px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  display: inline-block;
 }
 .service-heading {
   margin: 15px 0;
@@ -715,13 +715,17 @@ body {
   pointer-events: none;
 }
 .box-background,
-.box-background-light {
+.box-background-light,
+.box-background-mid {
   background-color: #F7F7F7;
   border-radius: 10px;
   padding: 30px;
 }
 .box-background-light {
   background: rgba(247, 247, 247, 0.6);
+}
+.box-background-mid {
+  background: rgba(247, 247, 247, 0.8);
 }
 .when-where-list {
   font-size: 16px;
@@ -813,14 +817,14 @@ body {
   text-align: center;
 }
 #gettingThere {
-  background: url('../img/header-bg.jpg') no-repeat 50% top;
+  background: url('../img/IMG_0357.JPG') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #theWeekend {
-  background: url('../img/header-bg.jpg') no-repeat 50% top;
+  background: url('../img/IMG_9951.JPG') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -916,4 +920,115 @@ body {
 }
 #contactForm label {
   margin-top: 20px;
+}
+#rsvp .rsvp-collage-img {
+  min-width: 300px;
+  min-height: 300px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#rsvp .collage-1 {
+  background: url('../img/Collage/DSC00255.JPG') no-repeat 50% top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#rsvp .collage-2 {
+  background: url('../img/Collage/DSC09812.JPG') no-repeat 50% top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#rsvp .collage-3 {
+  background: url('../img/Collage/DSCF0522.JPG') no-repeat 50% top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#rsvp .collage-4 {
+  background: url('../img/Collage/IMG_8456.JPG') no-repeat 50% top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#rsvp .collage-5 {
+  background: url('../img/Collage/IMG_6496.JPG') no-repeat 50% top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#rsvp .collage-6 {
+  background: url('../img/Collage/332.JPG') no-repeat 50% top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#rsvp .collage-7 {
+  background: url('../img/Collage/DSC01369.JPG') no-repeat 50% top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#rsvp .collage-8 {
+  background: url('../img/Collage/DSC01313.JPG') no-repeat 50% top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#rsvp .rsvp-collage-col {
+  padding: 4px;
+  position: relative;
+}
+#rsvp .rsvp-info {
+  padding: 20px 30px;
+}
+#rsvp .rsvp-container {
+  position: relative;
+}
+#rsvp .rsvp-info-circle {
+  top: 212px;
+  height: 500px;
+  max-width: 500px;
+  border-radius: 250px;
+  z-index: 1;
+  background-color: white;
+  text-align: center;
+  vertical-align: middle;
+  padding: 100px 80px;
+  display: none;
+  border: solid 8px #e5b7c3;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+@media (min-width: 992px) {
+  #rsvp .rsvp-info-circle {
+    display: block;
+  }
+}
+#rsvpModal .modal-close {
+  color: #E5B7C3;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+}
+#rsvpModal .modal-close:hover {
+  color: #d792a4;
+  text-decoration: none;
+}
+#rsvpModal .modal-body {
+  padding: 30px;
 }

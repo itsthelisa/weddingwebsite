@@ -42,6 +42,11 @@ $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
+$('.modal-close').click(function(e) {
+    e.preventDefault();
+    $('#rsvpModal').modal('hide');
+});
+
 /* ======= Countdown ========= */
 // set the date we're counting down to
 var target_date = new Date("October 28, 2016").getTime();

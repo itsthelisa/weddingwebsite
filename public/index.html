@@ -257,64 +257,108 @@
                      <h3 class="cursive-heading">Thank you so much!</h3>
                      <h3 class="thank-you-text">Lisa &amp; Michael</h3>
                 </div>
-                <img src="img/Mudbrick.jpg" class="us-image">
+                <img src="img/ussmall.jpg" class="us-image">
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="rsvp">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">RSVP</h2>
-                    <h3 class="section-subheading text-muted">We'd love to see you at our wedding! Please RSVP below.</h3>
-                </div>
+        <div class="container rsvp-container">
+            <div class="rsvp-info-circle">
+                <span class="decoration mirror-image">w</span>
+                <h2 class="section-heading">RSVP</h2>
+                <span class="decoration">w</span>
+                <h3 class="section-subheading text-muted">We'd love to see you at our wedding! Please let us know if you can make it.</h3>
+                <button type="button" class="btn btn-xl" data-toggle="modal" data-target="#rsvpModal">Oke doke!</button>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row">
-                            <div class="col-md-6 col-md-offset-3">
-                                <div class="form-group form-fields">
-                                    <label for="names">Names</label>
-                                    <textarea class="form-control" placeholder="Full names of all guests" id="names" name="names" required data-validation-required-message="Please enter the names of all guests."></textarea>
-                                    <p class="help-block text-danger"></p>
-
-                                    <label for="email">Email</label>
-                                    <input type="text" class="form-control" placeholder="For contacting!" id="email" name="email" required data-validation-required-message="Please enter your email.">
-                                    <p class="help-block text-danger"></p>
-
-                                    <label for="attending">Will you be attending?</label>
-                                    <paper-radio-group>
-                                        <paper-radio-button class="attending pink" name="yes">Yes</paper-radio-button>
-                                        <paper-radio-button class="attending pink" name="no">No</paper-radio-button>
-                                        <paper-radio-button class="attending pink" name="some">Some of us</paper-radio-button>
-                                    </paper-radio-group>
-                                    <p class="help-block text-danger"></p>
-
-                                    <label for="bus">Would you use a bus to and from Mudbrick if provided?</label>
-                                    <paper-radio-group>
-                                        <paper-radio-button class="bus pink" name="yes">Yes</paper-radio-button>
-                                        <paper-radio-button class="bus pink" name="no">No</paper-radio-button>
-                                    </paper-radio-group>
-                                    <p class="help-block text-danger"></p>
-
-                                    <label for="extraInfo">Anything else?</label>
-                                    <textarea class="form-control" placeholder="Questions, dietary requirements etc." id="extraInfo" name="extaInfo"></textarea>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">OK, go!</button>
-                            </div>
+            <form name="sentMessage" id="contactForm" novalidate>
+                <div class="row">
+                    <div class="col-md-4 rsvp-collage-col">
+                        <div class="rsvp-collage-img collage-1"></div>
+                    </div>
+                    <div class="col-md-4 rsvp-collage-col">
+                        <div class="rsvp-collage-img collage-2"></div>
+                    </div>
+                    <div class="col-md-4 rsvp-collage-col">
+                        <div class="rsvp-collage-img collage-3"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 rsvp-collage-col">
+                        <div class="rsvp-collage-img collage-4"></div>
+                    </div>
+                    <div class="col-md-4 rsvp-collage-col text-center">
+                        <div class="rsvp-info">
+                            <span class="decoration mirror-image">w</span>
+                            <h2 class="section-heading">RSVP</h2>
+                            <span class="decoration">w</span>
+                            <h3 class="section-subheading text-muted">We'd love to see you at our wedding! Please RSVP below.</h3>
                         </div>
-                    </form>
+                    </div>
+                    <div class="col-md-4 rsvp-collage-col">
+                        <div class="rsvp-collage-img collage-5"></div>
+                    </div>
                 </div>
-            </div>
+                <div class="row">
+                    <div class="col-md-4 rsvp-collage-col">
+                        <div class="rsvp-collage-img collage-6"></div>
+                    </div>
+                    <div class="col-md-4 rsvp-collage-col">
+                        <div class="rsvp-collage-img collage-7"></div>
+                    </div>
+                    <div class="col-md-4 rsvp-collage-col">
+                        <div class="rsvp-collage-img collage-8"></div>
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
+
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="rsvpModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <a href="#" class="glyphicon glyphicon-remove modal-close"></a>
+            <div class="text-center">
+                <h2 class="section-heading">RSVP</h2>
+            </div>
+            <div class="form-group form-fields">
+                <label for="names">Names</label>
+                <textarea class="form-control" placeholder="Full names of all guests" id="names" name="names" required data-validation-required-message="Please enter the names of all guests."></textarea>
+                <p class="help-block text-danger"></p>
+
+                <label for="email">Email</label>
+                <input type="text" class="form-control" placeholder="For contacting!" id="email" name="email" required data-validation-required-message="Please enter your email.">
+                <p class="help-block text-danger"></p>
+
+                <label for="attending">Will you be attending?</label>
+                <paper-radio-group>
+                    <paper-radio-button class="attending pink" name="yes">Yes</paper-radio-button>
+                    <paper-radio-button class="attending pink" name="no">No</paper-radio-button>
+                    <paper-radio-button class="attending pink" name="some">Some of us</paper-radio-button>
+                </paper-radio-group>
+                <p class="help-block text-danger"></p>
+
+                <label for="bus">Would you use a bus to and from Mudbrick if provided?</label>
+                <paper-radio-group>
+                    <paper-radio-button class="bus pink" name="yes">Yes</paper-radio-button>
+                    <paper-radio-button class="bus pink" name="no">No</paper-radio-button>
+                </paper-radio-group>
+                <p class="help-block text-danger"></p>
+
+                <label for="extraInfo">Anything else?</label>
+                <textarea class="form-control" placeholder="Questions, dietary requirements etc." id="extraInfo" name="extaInfo"></textarea>
+            </div>
+            <div class="text-center">
+                <div id="success"></div>
+                <button type="submit" class="btn btn-xl">OK, go!</button>
+            </div>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
     <footer>
         <div class="container">

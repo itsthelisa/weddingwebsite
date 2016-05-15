@@ -18,6 +18,7 @@ $(function() {
         zoom: 14,
     });
 
+
     map.addMarker({
         lat: -36.792404,
         lng: 175.000154,    
@@ -40,6 +41,11 @@ $('body').scrollspy({
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
     $('.navbar-toggle:visible').click();
+});
+
+$('.modal-close').click(function(e) {
+    e.preventDefault();
+    $('#rsvpModal').modal('hide');
 });
 
 /* ======= Countdown ========= */
