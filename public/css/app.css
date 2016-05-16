@@ -33,6 +33,9 @@ body {
 .text-primary {
   color: #E5B7C3;
 }
+.text-right {
+  text-align: right;
+}
 p {
   font-size: 14px;
   line-height: 1.75;
@@ -739,7 +742,6 @@ body {
 .love-icon {
   font-size: 32px;
   color: #CC9BA9;
-  padding-right: 20px;
   vertical-align: middle;
 }
 .decoration,
@@ -787,6 +789,11 @@ body {
   color: #786b67;
   text-transform: lowercase;
 }
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
 .image-collage {
   border-radius: 10px;
 }
@@ -815,6 +822,9 @@ body {
   letter-spacing: 1px;
   color: #333;
   text-align: center;
+}
+.when-where {
+  margin-top: 30px;
 }
 #gettingThere {
   background: url('../img/IMG_0357.JPG') no-repeat 50% top;
