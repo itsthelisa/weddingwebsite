@@ -230,7 +230,7 @@ fieldset[disabled] .btn-xl.active {
 }
 header {
   position: relative;
-  background-image: url('../img/header-bg-20.jpg');
+  background-image: url('../img/header-bg.jpg');
   background-repeat: none;
   background-attachment: scroll;
   background-position: center center;
@@ -715,17 +715,17 @@ body {
   pointer-events: none;
 }
 .box-background,
-.box-background-light,
-.box-background-mid {
+.box-background-white,
+.box-background-light {
   background-color: #F7F7F7;
   border-radius: 10px;
   padding: 30px;
 }
-.box-background-light {
-  background: rgba(247, 247, 247, 0.6);
+.box-background-white {
+  background-color: white;
 }
-.box-background-mid {
-  background: rgba(247, 247, 247, 0.8);
+.box-background-light {
+  background: rgba(247, 247, 247, 0.7);
 }
 .when-where-list {
   font-size: 16px;
@@ -813,7 +813,7 @@ body {
   font-size: 38px;
   font-weight: bold;
   letter-spacing: 1px;
-  color: white;
+  color: #333;
   text-align: center;
 }
 #gettingThere {
@@ -824,7 +824,7 @@ body {
   background-size: cover;
 }
 #theWeekend {
-  background: url('../img/IMG_9951.JPG') no-repeat 50% top;
+  background: url('../img/IMG_9951.JPG') no-repeat 50%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -937,7 +937,7 @@ body {
   background-size: cover;
 }
 #rsvp .collage-2 {
-  background: url('../img/Collage/DSC09812.JPG') no-repeat 50% top;
+  background: url('../img/Collage/IMG_3475.JPG') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -965,21 +965,21 @@ body {
   background-size: cover;
 }
 #rsvp .collage-6 {
-  background: url('../img/Collage/332.JPG') no-repeat 50% top;
+  background: url('../img/Collage/DSC01313.JPG') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #rsvp .collage-7 {
-  background: url('../img/Collage/DSC01369.JPG') no-repeat 50% top;
+  background: url('../img/Collage/IMG_7192.JPG') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #rsvp .collage-8 {
-  background: url('../img/Collage/DSC01313.JPG') no-repeat 50% top;
+  background: url('../img/Collage/332.JPG') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
