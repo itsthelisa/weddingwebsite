@@ -325,10 +325,15 @@ section.padding-bottom {
   padding-bottom: 100px;
 }
 .section-heading {
-  font-size: 60px;
+  font-size: 45px;
   margin-top: 0;
   margin-bottom: 15px;
   display: inline-block;
+}
+@media (min-width: 768px) {
+  .section-heading {
+    font-size: 60px;
+  }
 }
 .service-heading {
   margin: 15px 0;
@@ -727,7 +732,14 @@ body {
 .box-background-light {
   background-color: #F7F7F7;
   border-radius: 10px;
-  padding: 30px;
+  padding: 15px;
+}
+@media (min-width: 768px) {
+  .box-background,
+  .box-background-white,
+  .box-background-light {
+    padding: 30px;
+  }
 }
 .box-background-white {
   background-color: white;
@@ -737,8 +749,13 @@ body {
 }
 .when-where-list {
   font-size: 16px;
-  padding-left: 70px;
+  padding-left: 10px;
   margin-top: 30px;
+}
+@media (min-width: 604px) {
+  .when-where-list {
+    padding-left: 70px;
+  }
 }
 .when-where-list li {
   margin-bottom: 15px;
@@ -752,10 +769,18 @@ body {
 .decoration,
 .decoration-white {
   font-family: "LuellaOrnamentsA";
-  font-size: 70px;
+  font-size: 50px;
   color: #E5B7C3;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 768px) {
+  .decoration,
+  .decoration-white {
+    font-size: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .decoration-white {
   color: white;

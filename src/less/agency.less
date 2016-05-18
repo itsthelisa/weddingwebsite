@@ -294,10 +294,14 @@ section {
 }
 
 .section-heading {
-	font-size: 60px;
+	font-size: 45px;
 	margin-top: 0;
 	margin-bottom: 15px;
 	display: inline-block;
+
+	@media(min-width:768px) {
+		font-size: 60px;
+	}
 }
 
 // Services Section
@@ -751,7 +755,11 @@ body {
 .box-background {
 	background-color: #F7F7F7;
 	border-radius: 10px;
-	padding: 30px;
+	padding: 15px;
+
+	@media(min-width:768px) {
+		padding: 30px;
+	}
 }
 
 .box-background-white {
@@ -766,8 +774,12 @@ body {
 
 .when-where-list {
 	font-size: 16px;
-	padding-left: 70px;
+	padding-left: 10px;
 	margin-top: 30px;
+
+	@media(min-width:604px) {
+		padding-left: 70px;
+	}
 
 	li {
 		margin-bottom: 15px;
@@ -783,10 +795,16 @@ body {
 
 .decoration {
 	.ornaments-a-font;
-	font-size: 70px;
+	font-size: 50px;
 	color: @brand-primary;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	@media(min-width:768px) {
+		font-size: 70px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 
 .decoration-white {
