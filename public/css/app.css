@@ -187,7 +187,12 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a {
   font-family: "Voltaire", "Helvetica Neue", Helvetica, Arial, cursive;
   color: white;
-  font-size: 22px;
+  font-size: 18px;
+}
+@media (min-width: 992px) {
+  .navbar-default .nav li a {
+    font-size: 22px;
+  }
 }
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
