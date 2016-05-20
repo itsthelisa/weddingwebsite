@@ -1037,6 +1037,11 @@ body {
 	    -moz-background-size: cover;
 	    -o-background-size: cover;
 	    background-size: cover;
+
+	    margin: 2px;
+	    @media(min-width:992px) {
+	    	margin: 0;
+	    }
     }
 	.collage-1{ 
 		background: url('../img/Collage/DSC00255.JPG') no-repeat 50% top;
@@ -1044,6 +1049,11 @@ body {
 	    -moz-background-size: cover;
 	    -o-background-size: cover;
 	    background-size: cover;
+
+	    display: none;
+	    @media(min-width:992px) {
+	    	display: block;
+	    }
 	}
 	.collage-2{ 
 		background: url('../img/Collage/IMG_3475.JPG') no-repeat 50% top;
@@ -1058,6 +1068,11 @@ body {
 	    -moz-background-size: cover;
 	    -o-background-size: cover;
 	    background-size: cover;
+
+	    display: none;
+	    @media(min-width:992px) {
+	    	display: block;
+	    }
 	}
 	.collage-4{ 
 		background: url('../img/Collage/IMG_8456.JPG') no-repeat 50% top;
@@ -1065,6 +1080,11 @@ body {
 	    -moz-background-size: cover;
 	    -o-background-size: cover;
 	    background-size: cover;
+
+	    display: none;
+	    @media(min-width:992px) {
+	    	display: block;
+	    }
 	}
 	.collage-5{ 
 		background: url('../img/Collage/IMG_6496.JPG') no-repeat 50% top;
@@ -1072,6 +1092,11 @@ body {
 	    -moz-background-size: cover;
 	    -o-background-size: cover;
 	    background-size: cover;
+
+	    display: none;
+	    @media(min-width:768px) {
+	    	display: block;
+	    }
 	}
 	.collage-6{ 
 		background: url('../img/Collage/DSC01313.JPG') no-repeat 50% top;
@@ -1079,9 +1104,14 @@ body {
 	    -moz-background-size: cover;
 	    -o-background-size: cover;
 	    background-size: cover;
+
+	    display: none;
+	    @media(min-width:992px) {
+	    	display: block;
+	    }
 	}
 	.collage-7{ 
-		background: url('../img/Collage/IMG_7192.JPG') no-repeat 50% top;
+		background: url('../img/Collage/IMG_7192.JPG') no-repeat 50% center;
 		-webkit-background-size: cover; 
 	    -moz-background-size: cover;
 	    -o-background-size: cover;
@@ -1093,13 +1123,26 @@ body {
 	    -moz-background-size: cover;
 	    -o-background-size: cover;
 	    background-size: cover;
+
+	    display: none;
+	    @media(min-width:992px) {
+	    	display: block;
+	    }
 	}
 	.rsvp-collage-col {
-		padding: 4px;
 		position: relative;
+		min-height: 0;
+
+	    @media(min-width:992px) {
+			padding: 4px;
+	    }
 	}
 	.rsvp-info {
 		padding: 20px 30px;
+		
+	    @media(min-width:768px) {
+	    	display: none;
+	    }
 	}
 	.rsvp-container {
 		position: relative;
@@ -1123,7 +1166,7 @@ body {
 	    left: 0;
 	    right: 0;
 
-	    @media(min-width:992px) {
+	    @media(min-width:768px) {
 	    	display: block;
 	    }
 	}
