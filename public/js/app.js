@@ -1,10 +1,14 @@
 /*global google, $*/
 function initMap() {
     'use strict';
+
+    var isDraggable = $(document).width() > 480;
+
     var map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: -36.785908, lng: 175.013876},
         scrollwheel: false,
-        zoom: 11
+        zoom: 11,
+        draggable: isDraggable
     });
 
     var infowindow = new google.maps.InfoWindow({
@@ -103,6 +107,12 @@ setInterval(function() {
 $(function() {
     'use strict';
 
+    $('#contactForm').submit(function(event) {
+        var attending = $('.attending[checked]').attr('name');
+        var bus = $('.bus[checked]').attr('name');
+
+    });
+
     $('#contactForm input, #contactForm textarea').jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
@@ -119,6 +129,22 @@ $(function() {
                 email: $('#email').val(),
                 extraInfo: $('#extraInfo').val()
             };
+
+            if (!data.attending) {
+                $('.attending-error').text('Please select an option');
+            } else  {
+                $('.attending-error').empty();
+            }
+
+            if (!data.bus) {
+                $('.bus-error').text('Please select an option');
+            } else {
+                $('.bus-error').empty();
+            }
+
+            if (!data.attending || !data.bus) {
+                return;
+            }
 
             $.ajax({
                 url: '/api/people',

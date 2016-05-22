@@ -1,10 +1,14 @@
 /*global google, $*/
 function initMap() {
     'use strict';
+
+    var isDraggable = $(document).width() > 480;
+
     var map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: -36.785908, lng: 175.013876},
         scrollwheel: false,
-        zoom: 11
+        zoom: 11,
+        draggable: isDraggable
     });
 
     var infowindow = new google.maps.InfoWindow({

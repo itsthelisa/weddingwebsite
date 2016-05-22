@@ -166,7 +166,7 @@
                                         <span class="icon-map love-icon"></span>
                                     </div><!--
                                     --><div class="col-xs-10 vcenter">
-                                        Mudbrick Restaurant &amp; Vinyard, Waiheke
+                                        Mudbrick Restaurant &amp; Vineyard, Waiheke <a href="https://goo.gl/maps/2iEmDDRLdqo" target="_blank"><span class="glyphicon glyphicon-new-window map-link"></span></a>
                                     </div>
                                 </div>
                             </li>
@@ -359,29 +359,32 @@
                 <div class="text-center">
                     <h2 class="section-heading">RSVP</h2>
                 </div>
-                <div class="form-group form-fields">
-                    <label for="names">Names</label>
-                    <textarea class="form-control" placeholder="Full names of all guests" id="names" name="names" required data-validation-required-message="Please enter the names of all guests."></textarea>
-                    <p class="help-block text-danger"></p>
-
-                    <label for="email">Email</label>
-                    <input type="text" class="form-control" placeholder="For contacting!" id="email" name="email" required data-validation-required-message="Please enter your email.">
-                    <p class="help-block text-danger"></p>
-
+                <div class="form-fields">
+                    <div class="form-group">
+                        <label for="names">Names</label>
+                        <textarea class="form-control" placeholder="Full names of all guests" id="names" name="names" required data-validation-required-message="Please enter the names of all guests."></textarea>
+                        <p class="help-block"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" placeholder="For contacting!" id="email" name="email" required data-validation-required-message="Please enter your email.">
+                        <p class="help-block"></p>
+                    </div>
+                
                     <label for="attending">Will you be attending?</label>
                     <paper-radio-group>
                         <paper-radio-button class="attending pink" name="yes">Yes</paper-radio-button>
                         <paper-radio-button class="attending pink" name="no">No</paper-radio-button>
                         <paper-radio-button class="attending pink" name="some">Some of us</paper-radio-button>
                     </paper-radio-group>
-                    <p class="help-block text-danger"></p>
+                    <p class="help-block attending-error"></p>
 
                     <label for="bus">Would you use a bus to and from Mudbrick if provided?</label>
                     <paper-radio-group>
                         <paper-radio-button class="bus pink" name="yes">Yes</paper-radio-button>
                         <paper-radio-button class="bus pink" name="no">No</paper-radio-button>
                     </paper-radio-group>
-                    <p class="help-block text-danger"></p>
+                    <p class="help-block bus-error"></p>
 
                     <label for="extraInfo">Anything else?</label>
                     <textarea class="form-control" placeholder="Questions, dietary requirements etc." id="extraInfo" name="extaInfo"></textarea>
