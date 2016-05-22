@@ -81,7 +81,7 @@ a.active {
 }
 
 a {
-	color: @brand-primary;
+	color: darken(@brand-primary, 10%);
 }
 
 a:hover,
@@ -1218,5 +1218,12 @@ body {
 	paper-radio-group:focus {
 		outline: none;
 	}
+
+	.alert-danger, .alert-success {
+		background-color: @brand-primary;
+		border-color: darken(@brand-primary, 10%);
+		color: white;
+	}
+
 }
 

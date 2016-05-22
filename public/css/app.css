@@ -63,7 +63,7 @@ a.active {
   outline: none;
 }
 a {
-  color: #E5B7C3;
+  color: #d792a4;
 }
 a:hover,
 a:focus,
@@ -1150,4 +1150,10 @@ body {
 }
 #rsvpModal paper-radio-group:focus {
   outline: none;
+}
+#rsvpModal .alert-danger,
+#rsvpModal .alert-success {
+  background-color: #E5B7C3;
+  border-color: #d792a4;
+  color: white;
 }

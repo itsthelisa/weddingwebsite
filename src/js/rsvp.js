@@ -2,12 +2,6 @@
 $(function() {
     'use strict';
 
-    $('#contactForm').submit(function(event) {
-        var attending = $('.attending[checked]').attr('name');
-        var bus = $('.bus[checked]').attr('name');
-
-    });
-
     $('#contactForm input, #contactForm textarea').jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
@@ -58,19 +52,21 @@ $(function() {
 
                     //clear all fields
                     $('#contactForm').trigger('reset');
+                    setTimeout(function() {
+                        $('#rsvpModal').modal('hide');
+                    }, 2500);
                 },
-                error: function() {
+                error: function(response) {
+                    var errorMessage = response.responseJSON[0].msg;
                     // Fail message
                     $('#success')
                         .html('<div class="alert alert-danger">');
                     $('#success > .alert-danger')
                         .html('<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>');
                     $('#success > .alert-danger')
-                        .append('<strong>Sorry it seems that my mail server is not responding. Please try again later!');
+                        .append(errorMessage);
                     $('#success > .alert-danger').append('</div>');
 
-                    //clear all fields
-                    $('#contactForm').trigger('reset');
                 }
             });
         },

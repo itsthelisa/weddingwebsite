@@ -61,33 +61,33 @@ app.post('/api/people', function(req, res) {
         email: {
             notEmpty: true,
             isEmail: {
-                errorMessage: 'That doesn\'t look like an email address, please try again'
+                errorMessage: 'Please fix up the email address, it doesn\'t look quite right.'
             }
         },
         names: {
             notEmpty: true,
-            errorMessage: 'Please provide the names of who is coming'
+            errorMessage: 'Please provide names for each person attending.'
         },
         attending: {
             notEmpty: true,
-            errorMessage: 'Please let us know if you plan on attending'
+            errorMessage: 'Please let us know if you plan on attending.'
         },
         bus: {
             notEmpty: true,
-            errorMessage: 'Please let us know if you\'d use a bus if one is provided'
+            errorMessage: 'Please let us know if you\'d use a bus if one is provided.'
         },
         extraInfo: {
             optional: true,
             isLength: {
                 options: [{ max: 500 }],
                 errorMessage: 'Wow, that\'s a lot of information, please shorten your message to ' +
-                    'under 500 characters and give us a call instead'
+                    'under 500 characters and give us a call or email instead.'
             }
         }
     });
 
     var body = req.body;
-    
+
     var person = {
         names: body.names,
         bus: body.bus,
@@ -99,7 +99,7 @@ app.post('/api/people', function(req, res) {
     var errors = req.validationErrors();
 
     if (errors) {
-        res.status(400).send(util.inspect(errors));
+        res.status(400).send(errors);
         return;
     }
 
