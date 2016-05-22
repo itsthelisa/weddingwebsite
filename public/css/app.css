@@ -1,27 +1,39 @@
 @font-face {
   font-family: Luella;
-  src: url("../fonts/LUELLA-Regular.otf") format("opentype");
+  src: url('../fonts/eot/LUELLA-Regular.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/eot/LUELLA-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/LUELLA-Regular.otf') format('opentype');
 }
 @font-face {
   font-family: Luella;
   font-weight: bold;
-  src: url("../fonts/LUELLA-BOLD.otf") format("opentype");
+  src: url('../fonts/eot/LUELLA-BOLD.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/eot/LUELLA-BOLD.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/LUELLA-BOLD.otf') format('opentype');
 }
 @font-face {
   font-family: LuellaFrames;
-  src: url("../fonts/LUELLA-DECORATIVEFRAMES.otf") format("opentype");
+  src: url('../fonts/eot/LUELLA-DECORATIVEFRAMES.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/eot/LUELLA-DECORATIVEFRAMES.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/LUELLA-DECORATIVEFRAMES.otf') format('opentype');
 }
 @font-face {
   font-family: LuellaOrnamentsA;
-  src: url("../fonts/LUELLA-ORNAMENTSA.otf") format("opentype");
+  src: url('../fonts/eot/LUELLA-ORNAMENTSA.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/eot/LUELLA-ORNAMENTSA.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/LUELLA-ORNAMENTSA.otf') format('opentype');
 }
 @font-face {
   font-family: LuellaOrnamentsB;
-  src: url("../fonts/LUELLA-ORNAMENTSB.otf") format("opentype");
+  src: url('../fonts/eot/LUELLA-ORNAMENTSB.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/eot/LUELLA-ORNAMENTSB.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/LUELLA-ORNAMENTSB.otf') format('opentype');
 }
 @font-face {
   font-family: Songbird;
-  src: url("../fonts/Songbird.otf") format("opentype");
+  src: url('../fonts/eot/Songbird.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/eot/Songbird.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Songbird.otf') format('opentype');
 }
 body {
   overflow-x: hidden;
@@ -238,7 +250,7 @@ fieldset[disabled] .btn-xl.active {
 }
 header {
   position: relative;
-  background-image: url('../img/header-bg.jpg');
+  background-image: url('../img/reduced/header-bg.jpg');
   background-repeat: none;
   background-attachment: scroll;
   background-position: center center;
@@ -859,14 +871,14 @@ body {
   margin-top: 30px;
 }
 #gettingThere {
-  background: url('../img/IMG_0357.JPG') no-repeat 50% top;
+  background: url('../img/reduced/IMG_0357.JPG') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #theWeekend {
-  background: url('../img/IMG_9951.JPG') no-repeat 50%;
+  background: url('../img/reduced/IMG_9951.JPG') no-repeat 50%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -978,7 +990,7 @@ body {
   }
 }
 #rsvp .collage-1 {
-  background: url('../img/Collage/DSC00255.JPG') no-repeat 50% top;
+  background: url('../img/reduced/DSC00255.JPG') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -991,14 +1003,14 @@ body {
   }
 }
 #rsvp .collage-2 {
-  background: url('../img/Collage/IMG_3475.JPG') no-repeat 50% top;
+  background: url('../img/reduced/IMG_3475.JPG') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #rsvp .collage-3 {
-  background: url('../img/Collage/DSCF0522.JPG') no-repeat 50% top;
+  background: url('../img/reduced/DSCF0522.JPG') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1011,7 +1023,7 @@ body {
   }
 }
 #rsvp .collage-4 {
-  background: url('../img/Collage/IMG_8456.JPG') no-repeat 50% top;
+  background: url('../img/reduced/IMG_8456.JPG') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1024,7 +1036,7 @@ body {
   }
 }
 #rsvp .collage-5 {
-  background: url('../img/Collage/IMG_6496.JPG') no-repeat 50% top;
+  background: url('../img/reduced/IMG_6496.JPG') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1037,7 +1049,7 @@ body {
   }
 }
 #rsvp .collage-6 {
-  background: url('../img/Collage/DSC01313.JPG') no-repeat 50% top;
+  background: url('../img/reduced/DSC01313.JPG') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1050,14 +1062,14 @@ body {
   }
 }
 #rsvp .collage-7 {
-  background: url('../img/Collage/IMG_7192.JPG') no-repeat 50% center;
+  background: url('../img/reduced/IMG_7192.JPG') no-repeat 50% center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #rsvp .collage-8 {
-  background: url('../img/Collage/332.JPG') no-repeat 50% top;
+  background: url('../img/reduced/332.JPG') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1125,4 +1137,14 @@ body {
 }
 #rsvpModal .modal-body {
   padding: 30px;
+}
+#rsvpModal .help-block {
+  color: #E5B7C3;
+}
+#rsvpModal .help-block ul {
+  list-style: none;
+  padding-left: 10px;
+}
+#rsvpModal paper-radio-group:focus {
+  outline: none;
 }
