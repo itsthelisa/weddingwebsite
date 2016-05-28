@@ -337,10 +337,15 @@ section.padding-bottom {
   padding-bottom: 100px;
 }
 .section-heading {
-  font-size: 45px;
+  font-size: 40px;
   margin-top: 0;
   margin-bottom: 15px;
   display: inline-block;
+}
+@media (min-width: 400px) {
+  .section-heading {
+    font-size: 45px;
+  }
 }
 @media (min-width: 768px) {
   .section-heading {
@@ -762,13 +767,14 @@ body {
   background: rgba(247, 247, 247, 0.7);
 }
 .when-where-list {
-  font-size: 16px;
+  font-size: 14px;
   padding-left: 10px;
   margin-top: 30px;
 }
 @media (min-width: 604px) {
   .when-where-list {
     padding-left: 70px;
+    font-size: 16px;
   }
 }
 .when-where-list li {
@@ -783,10 +789,16 @@ body {
 .decoration,
 .decoration-white {
   font-family: "LuellaOrnamentsA";
-  font-size: 50px;
+  font-size: 40px;
   color: #E5B7C3;
   padding-left: 10px;
   padding-right: 10px;
+}
+@media (min-width: 400px) {
+  .decoration,
+  .decoration-white {
+    font-size: 50px;
+  }
 }
 @media (min-width: 768px) {
   .decoration,
@@ -861,11 +873,16 @@ body {
 }
 .subheading {
   font-family: "Luella", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 38px;
+  font-size: 30px;
   font-weight: bold;
   letter-spacing: 1px;
   color: #333;
   text-align: center;
+}
+@media (min-width: 400px) {
+  .subheading {
+    font-size: 38px;
+  }
 }
 .when-where {
   margin-top: 30px;
@@ -934,12 +951,18 @@ body {
 #giftRegistry .cursive-heading {
   font-family: "Satisfy", "Helvetica Neue", Helvetica, Arial, cursive;
   font-weight: normal;
-  font-size: 50px;
+  font-size: 40px;
   line-height: 40px;
   margin-top: 30px;
   margin-bottom: 20px;
   padding-bottom: 10px;
   color: #E5B7C3;
+}
+@media (min-width: 400px) {
+  #giftRegistry .cursive-heading {
+    font-size: 50px;
+    line-height: 50px;
+  }
 }
 #giftRegistry .thank-you-text {
   font-family: "Luella", "Helvetica Neue", Helvetica, Arial, sans-serif;
