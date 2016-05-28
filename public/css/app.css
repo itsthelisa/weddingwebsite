@@ -900,6 +900,19 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+#gettingThere .box-background-light {
+  padding: 30px;
+}
+@media (min-width: 768px) {
+  #gettingThere .box-background-light {
+    padding: 15px;
+  }
+}
+@media (min-width: 990px) {
+  #gettingThere .box-background-light {
+    padding: 30px;
+  }
+}
 #theWeekend {
   background: url('../img/reduced/IMG_9951.JPG') no-repeat 50%;
   -webkit-background-size: cover;
