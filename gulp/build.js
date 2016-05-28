@@ -2,4 +2,4 @@
 
 var gulp = require('gulp');
 
-gulp.task('build', ['js', 'less', 'fonts', 'images', 'pages']);
+gulp.task('build', ['js', 'less', 'fonts', 'images', 'pages', 'favicons']);
