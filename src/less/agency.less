@@ -1003,7 +1003,7 @@ body {
 
 	.gift-info {
 
-		max-width: 400px;
+		width: 400px;
 	    position: absolute;
 	    top: 145px;
 	    margin-left: auto;
@@ -1198,7 +1198,7 @@ body {
 	.rsvp-info-circle {
 	    top: 212px;
 	    height: 500px;
-	    max-width: 500px;
+	    width: 500px;
 	    border-radius: 250px;
 	    z-index: 1;
 	    background-color: white;
@@ -1291,3 +1291,18 @@ body {
 		font-size: 25px;
 	}
 }
+
+@media all and (-ms-high-contrast:none) {
+	 .intro-date { 
+	 	font-family: "Voltaire", "Helvetica Neue", Helvetica, Arial, cursive !important;
+	 } /* IE10 */
+	 *::-ms-backdrop, .intro-date { 
+	 	font-family: "Voltaire", "Helvetica Neue", Helvetica, Arial, cursive !important;
+ 	} /* IE11 */
+ 	.decoration {
+ 		display: none;
+ 	}
+ 	*::-ms-backdrop, .decoration {
+ 		display: none;
+ 	}
+ }
