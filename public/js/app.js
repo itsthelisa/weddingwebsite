@@ -103,6 +103,26 @@ setInterval(function() {
 
 }, 1000);
 
+var maxFields = 4; //maximum input boxes allowed
+var wrapper = $('.input-fields-wrap'); //Fields wrapper
+var addButton = $('.add-field-button'); //Add button ID
+var x = 1; //initlal text box count
+
+$(addButton).click(function(e) { //on add input button click
+    e.preventDefault();
+
+    if (x < maxFields) { //max input box allowed
+        x++; //text box increment
+        $(wrapper).append('<div><input type="text" name="mytext[]"/><a href="#" class="remove-field"><span class="glyphicon glyphicon-minus"></span></a></div>'); //add input box
+    }
+});
+
+$(wrapper).on('click', '.remove-field', function(e) { //user click on remove text
+    e.preventDefault();
+    $(this).parent('div').remove();
+    x--;
+});
+
 /*global $*/
 $(function() {
     'use strict';

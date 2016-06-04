@@ -79,6 +79,9 @@ h5,
 h6 {
   font-family: "Luella", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+textarea {
+  resize: none;
+}
 .img-centered {
   margin: 0 auto;
 }
@@ -1003,6 +1006,9 @@ body {
   }
 }
 #contactForm #names {
+  height: 80px;
+}
+#contactForm #extraInfo {
   height: 80px;
 }
 #contactForm .form-fields {
