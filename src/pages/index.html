@@ -370,15 +370,19 @@
                     <h2 class="section-heading">RSVP</h2>
                 </div>
                 <div class="form-fields">
+
                     <div class="form-group">
-                        <label for="names">Names</label>
-                        <textarea class="form-control" placeholder="Full names of all guests" id="names" name="names" required data-validation-required-message="Please enter the names of all guests."></textarea>
+                        <label id="namesLabel" for="name">Names</label>
                         <div class="input-fields-wrap">
-                            <div>
-                                <input type="text" name="mytext[]">
-                                <a href="#" class="add-field-button">
-                                    <span class="glyphicon glyphicon-plus"></span>
-                                </a>
+                            <div class="row names-input-group">
+                                <div class="col-xs-9 col-sm-10 names-input-col">
+                                    <input type="text" name="name" class="guest-name form-control" placeholder="Full name" required data-validation-required-message="Please enter the names of all guests.">
+                                </div>
+                                <div class="col-xs-3 col-sm-2 names-button-col">
+                                    <a href="#" class="add-field-button names-button">
+                                        Add guest
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <p class="help-block"></p>

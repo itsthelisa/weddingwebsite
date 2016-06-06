@@ -1202,6 +1202,40 @@ body {
   border-color: #d792a4;
   color: white;
 }
+#rsvpModal .names-input-group {
+  margin-top: 10px;
+}
+#rsvpModal .names-input-group:first-child {
+  margin-top: 0;
+}
+#rsvpModal .names-button {
+  display: inline-block;
+  border: 1px solid #E5B7C3;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: Voltaire, "Helvetica Neue", Helvetica, Arial, cursive;
+  margin-left: 5px;
+  white-space: nowrap;
+}
+#rsvpModal .names-button:hover,
+#rsvpModal .names-button:focus {
+  text-decoration: none;
+  color: white;
+  background-color: #E5B7C3;
+}
+#rsvpModal .names-input-col {
+  padding-right: 0;
+}
+@media (min-width: 450px) {
+  #rsvpModal .names-input-col {
+    padding-right: 15px;
+  }
+}
+#rsvpModal .names-button-col {
+  padding-left: 0;
+}
+@media (min-width: 450px) {
+}
 #topcontrol {
   background: #E5B7C3;
   color: #fff;

@@ -11,8 +11,14 @@ $(function() {
         submitSuccess: function($form, event) {
             event.preventDefault();
 
+            var names = $('.guest-names').map(function() {
+                return $(this).text();
+            }).toArray();
+
+            console.log('names', names);
+
             var data = {
-                names: $('#names').val(),
+                names: names,
                 bus: $('.bus[checked]').attr('name'),
                 attending: $('.attending[checked]').attr('name'),
                 email: $('#email').val(),

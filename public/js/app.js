@@ -113,13 +113,18 @@ $(addButton).click(function(e) { //on add input button click
 
     if (x < maxFields) { //max input box allowed
         x++; //text box increment
-        $(wrapper).append('<div><input type="text" name="mytext[]"/><a href="#" class="remove-field"><span class="glyphicon glyphicon-minus"></span></a></div>'); //add input box
+        $(wrapper).append(
+            '<div class="row names-input-group">' +
+            '<div class="col-xs-9 col-sm-10 names-input-col">' +
+            '<input type="text" name="name" class="guest-name form-control" ' +
+            'placeholder="Full name"/></div>' +
+            '<div class="col-xs-3 col-sm-2 names-button-col"><a href="#" class="remove-field names-button">Remove</a></div></div>');
     }
 });
 
 $(wrapper).on('click', '.remove-field', function(e) { //user click on remove text
     e.preventDefault();
-    $(this).parent('div').remove();
+    $(this).parent('div').parent('div').remove();
     x--;
 });
 
@@ -136,8 +141,14 @@ $(function() {
         submitSuccess: function($form, event) {
             event.preventDefault();
 
+            var names = $('.guest-names').map(function() {
+                return $(this).text();
+            }).toArray();
+
+            console.log('names', names);
+
             var data = {
-                names: $('#names').val(),
+                names: names,
                 bus: $('.bus[checked]').attr('name'),
                 attending: $('.attending[checked]').attr('name'),
                 email: $('#email').val(),
