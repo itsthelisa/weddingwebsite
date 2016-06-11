@@ -4,6 +4,7 @@
 var bodyParser = require('body-parser'),
     express = require('express'),
     expressValidator = require('express-validator'),
+    compression = require('compression'),
     MongoClient = require('mongodb').MongoClient,
     util = require('util'),
 
@@ -19,7 +20,7 @@ var PEOPLE_COLLECTION = 'people';
 
 // Serve static files
 app.use(express.static(__dirname));
-
+app.use(compression());
 app.use(bodyParser.json());
 app.use(expressValidator());
 
