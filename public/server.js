@@ -66,7 +66,7 @@ app.post('/api/people', function(req, res) {
         },
         names: {
             notEmpty: true,
-            errorMessage: 'Please provide names for each person attending.'
+            errorMessage: 'Please provide the names of each person attending.'
         },
         attending: {
             notEmpty: true,

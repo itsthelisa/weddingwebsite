@@ -954,13 +954,17 @@ body {
   }
 }
 #giftRegistry .gift-info {
-  width: 400px;
   position: absolute;
   top: 145px;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
+}
+@media (min-width: 475px) {
+  #giftRegistry .gift-info {
+    width: 400px;
+  }
 }
 @media (min-width: 768px) {
   #giftRegistry .gift-info {
@@ -1024,7 +1028,6 @@ body {
   margin-top: 20px;
 }
 #rsvp .rsvp-collage-img {
-  min-width: 300px;
   min-height: 300px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
