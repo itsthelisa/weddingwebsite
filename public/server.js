@@ -19,8 +19,8 @@ console.log(process.env.MONGODB_URI);
 var PEOPLE_COLLECTION = 'people';
 
 // Serve static files
-app.use(express.static(__dirname));
 app.use(compression());
+app.use(express.static(__dirname));
 app.use(bodyParser.json());
 app.use(expressValidator());
 
