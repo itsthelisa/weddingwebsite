@@ -53,7 +53,7 @@ $('.modal-close').click(function(e) {
 
 /* ======= Countdown ========= */
 // set the date we're counting down to
-var targetDate = new Date('October 28, 2016').getTime();
+var targetDate = new Date('Fri, 28 Oct 2016 17:00:00 +1200').getTime();
 
 // variables for time units
 var days, hours, minutes, seconds;
